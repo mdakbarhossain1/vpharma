@@ -9,6 +9,7 @@ const ServicesDetails = () => {
     const data = useFetch("services.json");
     const myData = data.filter(items => items.title === title)
     console.log(myData)
+    console.log(data)
     return (
         <section className="max-w-screen-xl py-24 mx-auto px-6  overflow-y-hidden">
             <div className="flex flex-col justify-center items-center pt-24">
