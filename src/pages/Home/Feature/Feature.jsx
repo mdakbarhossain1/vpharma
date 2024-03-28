@@ -20,7 +20,7 @@ const Feature = () => {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
+                // navigation={true}
                 modules={[Autoplay]}
                 // grabCursor={true}
                 slidesPerView={4}

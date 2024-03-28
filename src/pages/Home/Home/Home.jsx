@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner"
 import Feature from "../Feature/Feature"
+import Products from "../Products/Products"
 import Services from "../Services/Services"
 
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner />
       <Feature />
       <Services />
+      <Products />
     </>
   )
 }
