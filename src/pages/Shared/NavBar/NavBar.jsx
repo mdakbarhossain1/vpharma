@@ -1,14 +1,18 @@
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { HiMenuAlt3 } from 'react-icons/hi';
 import vPharma from "../../../assets/images/vPharma.png"
 import { useState } from 'react';
 import { Fade } from "react-awesome-reveal";
+import useOrder from "../../../hook/useOrder";
+import { BsCart2 } from "react-icons/bs";
 
 const NavBar = () => {
 
     const [changeHeader, setChangeHeader] = useState(false)
     const [mobileNav, setMobileNav] = useState(false)
+    const navigate = useNavigate();
+    const { orders } = useOrder();
 
     const menu = [
         { id: 1, text: 'Home', to: '/' },
@@ -51,7 +55,11 @@ const NavBar = () => {
                             </li>
                         ))}
                     </ul>
-
+                    {/* Cart information  */}
+                    <div className="relative flex cursor-pointer" onClick={() => navigate('/orders')}>
+                        <span className="bg-teal-600  w-6 h-6 rounded-full flex items-center justify-center text-white poppins absolute -right-2 -top-2">{orders.length}</span>
+                        <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700 " />
+                    </div>
                     {/* <AuthorizeUser /> */}
                 </div>
 
@@ -76,6 +84,11 @@ const NavBar = () => {
                         </ul>
 
                         <div>
+                            {/* Cart information  */}
+                            <div className="relative flex cursor-pointer" onClick={() => navigate('/orders')}>
+                                <span className="bg-teal-600  w-6 h-6 rounded-full flex items-center justify-center text-white poppins absolute -right-2 -top-2">{orders.length}</span>
+                                <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700 " />
+                            </div>
                             {/* <AuthorizeUserMobile /> */}
                         </div>
                     </nav>

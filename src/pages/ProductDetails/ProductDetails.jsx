@@ -15,7 +15,7 @@ const ProductDetails = () => {
     return (
         <section className="max-w-screen-xl py-24 mx-auto px-6  overflow-y-hidden">
             <div className="flex flex-col justify-center items-center pt-24">
-                {myData.map(product => (<>
+                {myData.map(product => (
                     <div key={product.id} className="p-6 box-border grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
                         {/* image  */}
                         <div>
@@ -48,7 +48,7 @@ const ProductDetails = () => {
                                 </div>
                                 <div className="flex items-center justify-between py-6">
                                     <h2 className="text-3xl text-black font-bold poppins">${product.price}</h2>
-                                    <button disabled={disabled} className={` ${disabled} && "opacity-30" w-36 btn-primary py-3 px-4 poppins text-sm flex items-center space-x-3 text-center justify-center`}
+                                    <button disabled={disabled} className={` ${disabled} && "opacity-30" w-36 bg-customGreen rounded-md text-white py-3 px-4 poppins text-sm flex items-center space-x-3 text-center justify-center`}
                                         onClick={() => {
                                             // handleCart(product)
                                             setDisabled(true)
@@ -69,9 +69,9 @@ const ProductDetails = () => {
                         </div>
                         <Link to="/products" className="pt-4 text-teal-500 text-sm hover:underline flex items-center space-x-3"><BsArrowLeft /> <span>Back</span></Link>
                     </div>
-                </>))}
+                ))}
             </div>
-        </section>
+        </section >
     )
 }
 

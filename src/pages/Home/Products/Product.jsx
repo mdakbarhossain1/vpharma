@@ -7,10 +7,12 @@ import { Rating } from 'react-simple-star-rating'
 import Swal from "sweetalert2";
 import Button from "../../../components/Form/Button";
 import { useNavigate } from "react-router-dom";
+import useOrder from "../../../hook/useOrder";
 
 const Product = ({ product }) => {
-    const { title, image, description, price, reviews, rating } = product;
+    const { title, image, description, price, reviews, rating, id } = product;
     const [disabled, setDisabled] = useState(false);
+    const { handleCart, orders } = useOrder();
     const navigation = useNavigate()
     return (
         <Bounce>
@@ -40,7 +42,7 @@ const Product = ({ product }) => {
                 {/* buttons */}
                 <div className="flex items-center space-x-3">
                     <button disabled={disabled} className={` ${disabled} && "opacity-30" w-36 bg-customGreen rounded-md py-3 px-4 poppins text-sm flex items-center justify-center space-x-3 text-center text-white`} onClick={() => {
-
+                        handleCart(product);
                         setDisabled(true)
                         Swal.fire({
                             title: "Good job!",
@@ -50,7 +52,7 @@ const Product = ({ product }) => {
 
                     }}>
                         <BsCart2 className="text-2xl" />
-                        {/* <span>{orders.find(item => item.id === props.id) || disabled ? "Added" : "Add To Cart"}</span> */}
+                        <span>{orders.find(item => item.id === id) || disabled ? "Added" : "Cart"}</span>
                     </button>
                     <Button className="w-36 bg-customGreen py-3 px-2 poppins text-md rounded-md text-white" text="View" onClick={() => navigation(`/products/${title}`)} />
                 </div>

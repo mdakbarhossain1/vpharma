@@ -7,6 +7,7 @@ import Products from "../pages/Products/Products"
 import Contact from "../pages/Contact/Contact"
 import ServicesDetails from "../pages/ServicesDetails/ServicesDetails"
 import ProductDetails from "../pages/ProductDetails/ProductDetails"
+import Orders from "../pages/Orders/Orders"
 
 const Routes = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const Routes = createBrowserRouter([
             {
                 path: '/services/:title',
                 element: <ServicesDetails />
+            },
+            {
+                path: '/orders',
+                element: <Orders />
             },
             {
                 path: '/contact',

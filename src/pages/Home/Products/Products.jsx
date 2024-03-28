@@ -27,6 +27,22 @@ const Products = () => {
                     slidesPerView={3}
                     speed={400}
                     spaceBetween={20}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 1,
+
+                        },
+                        500: {
+                            slidesPerView: 1,
+
+                        },
+                        700: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 3
+                        }
+                    }}
                 >
                     {data.slice(0, 6).map(product => (
                         <SwiperSlide key={product.id}>

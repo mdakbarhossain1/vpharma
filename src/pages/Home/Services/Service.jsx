@@ -12,7 +12,7 @@ const Service = ({data}) => {
             <img className="w-24" src={icon} alt={title} />
             <h1 className="text-gray-600 poppins text-xl text-center">{title}</h1>
             <p className="text-gray-500 text-center">{description.slice(0, 70)}</p>
-            <Button className="w-36 bg-customGreen rounded-md text-white py-3 px-2 poppins text-sm" text="Learn More" onClick={() => navigate(`/services/${title}`)} />
+            <Button className="w-36 bg-customGreen rounded-md text-white py-3 px-2 poppins text-md" text="Learn More" onClick={() => navigate(`/services/${title}`)} />
         </div>
   )
 }

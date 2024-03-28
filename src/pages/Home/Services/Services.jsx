@@ -32,6 +32,10 @@ const Services = () => {
                 speed={400}
                 spaceBetween={20}
                 breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+
+                    },
                     500: {
                         slidesPerView: 1,
 

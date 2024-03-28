@@ -26,6 +26,22 @@ const Feature = () => {
                 slidesPerView={4}
                 speed={400}
                 spaceBetween={20}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+
+                    },
+                    500: {
+                        slidesPerView: 1,
+
+                    },
+                    700: {
+                        slidesPerView: 2
+                    },
+                    1024: {
+                        slidesPerView: 3
+                    }
+                }}
 
             >
                 {
