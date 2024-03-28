@@ -1,0 +1,48 @@
+[
+  {
+      "id": 1,
+      "title": "Pharmacy Help Line",
+      "description": "Do you need answers to questions about prescription drugs? We’re here 24 hours a day, every day.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604117/005-hot-line_on3h9o.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604292/service-1_wxzdft.jpg",
+      "contactno": "1-800-238-6279",
+      "email": "phamipharma@gmail.com",
+      "facebook": "https://www.facebook.com",
+      "instagram": "https://www.instagram.com"
+  },
+  {
+      "id": 2,
+      "title": "Prescribing Tools",
+      "description": "Search our formulary list of preferred drugs. Find a pharmacy clinical policy bulletin, or search our preferred drug lists. Or find out more about e-prescribing.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604116/004-tools_vvluj3.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604293/service-2_z7znm1.jpg"
+  },
+  {
+      "id": 3,
+      "title": "Specialty Medications",
+      "description": "Some patients require specialty drugs for chronic or complex conditions. The network specialty pharmacy can dispense these drugs quickly and at a reasonable cost.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604117/006-medical-care_alnwna.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604294/service-3_k9c1uy.jpg"
+  },
+  {
+      "id": 4,
+      "title": "Pharmacy Claims",
+      "description": "Search our formulary list of preferred drugs. Find a pharmacy clinical policy bulletin, or search our preferred drug lists. Or find out more about e-prescribing.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604115/002-medicine_wuytrl.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604295/service-4_yb7jsc.jpg"
+  },
+  {
+      "id": 5,
+      "title": "Log in to our provider portal",
+      "description": "The provider portal has information and tools to complete real-time transactions along with administrative and financial tools.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604115/001-portal_zgnegh.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604296/service-5_p2adeq.jpg"
+  },
+  {
+      "id": 6,
+      "title": "Our URAC pharmacy accreditations",
+      "description": "URAC is an independent, non-profit health care accrediting organization dedicated to promoting health care quality through accreditation, education, and measurement.",
+      "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604118/007-injection_asplrx.png",
+      "image": "https://res.cloudinary.com/db9o85glg/image/upload/v1711604297/service-6_xzevpz.jpg"
+  }
+]

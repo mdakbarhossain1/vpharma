@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Free Shipping",
+        "description": "Order Over $600",
+        "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711599764/truck_qtzif7.png",
+        "contactno": "1-800-238-6279",
+        "email": "vpharma@gmail.com"
+    },
+    {
+        "id": 2,
+        "title": "Quick Payment",
+        "description": "100% Secure",
+        "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711599764/credit-card_yq1sdd.png",
+        "contactno": "1-800-238-6279",
+        "email": "vpharma@gmail.com"
+    },
+    {
+        "id": 3,
+        "title": "Big Cashback ",
+        "description": "Over 50% Cashback",
+        "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711599764/gift_aa1tlh.png",
+        "contactno": "1-800-238-6279",
+        "email": "vpharma@gmail.com"
+    },
+    {
+        "id": 4,
+        "title": "24/7 Support",
+        "description": "Ready for you",
+        "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711599764/users_izclbm.png",
+        "contactno": "1-800-238-6279",
+        "email": "vpharma@gmail.com"
+    },
+    {
+        "id": 5,
+        "title": "Free Insurance",
+        "description": "Insurance for your Family",
+        "icon": "https://res.cloudinary.com/db9o85glg/image/upload/v1711600927/insurance_btcgj8.png",
+        "contactno": "1-800-238-6279",
+        "email": "vpharma@gmail.com"
+    }
+]
