@@ -5,9 +5,11 @@ import Swal from "sweetalert2";
 import { Fade } from "react-awesome-reveal";
 import { Rating } from "react-simple-star-rating";
 import { useState } from "react";
+import useOrder from "../../hook/useOrder";
 
 const ProductDetails = () => {
 
+    const {handleCart, orders} = useOrder();
     const [disabled, setDisabled] = useState(false);
     const { title } = useParams()
     const data = useFetch("products.json");
@@ -50,7 +52,7 @@ const ProductDetails = () => {
                                     <h2 className="text-3xl text-black font-bold poppins">${product.price}</h2>
                                     <button disabled={disabled} className={` ${disabled} && "opacity-30" w-36 bg-customGreen rounded-md text-white py-3 px-4 poppins text-sm flex items-center space-x-3 text-center justify-center`}
                                         onClick={() => {
-                                            // handleCart(product)
+                                            handleCart(product)
                                             setDisabled(true)
                                             Swal.fire({
                                                 title: "Good job!",
@@ -61,7 +63,7 @@ const ProductDetails = () => {
 
                                     >
                                         <BsCart2 className="text-2xl" />
-                                        {/* <span>{orders.filter(item => item.id === product.id) || disabled ? "Added" : "Add To Cart"}</span> */}
+                                        <span>{orders.filter(item => item.id === product.id) || disabled ? "Added" : "Add To Cart"}</span>
 
                                     </button>
                                 </div>
