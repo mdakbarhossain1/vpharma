@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const useFetch = ( file ) => {
 
     const [data, setData] = useState([]);
-    const url =`./api/${file}`
+    const url =`https://raw.githubusercontent.com/mdakbarhossain1/vpharma/main/public/api/${file}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
