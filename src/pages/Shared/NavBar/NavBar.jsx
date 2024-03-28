@@ -1,5 +1,5 @@
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { HiMenuAlt3 } from 'react-icons/hi';
 import vPharma from "../../../assets/images/vPharma.png"
 import { useState } from 'react';
@@ -42,7 +42,7 @@ const NavBar = () => {
                 {/* brand  */}
                 <div className="flex flex-grow">
                     <div className="flex items-center space-x-4">
-                        <img className="select-none" src={vPharma} alt="logo" />
+                        <Link to="/"><img className="select-none" src={vPharma} alt="logo" /></Link>
                     </div>
                 </div>
                 {/* menu s */}
@@ -76,7 +76,7 @@ const NavBar = () => {
                         <ul className="mb-2">
                             {menu.map(item => (
                                 <li key={item.id} className="mb-3">
-                                    <NavLink exact="true" key={item.id} to={item.to} className="text-gray-600 poppins text-lg text-center py-2 px-3 w-full hover:bg-gray-200 transition duration-300 cursor-default block rounded-lg" >
+                                    <NavLink exact="true" key={item.id} to={item.to} className="text-gray-600 poppins text-lg text-center py-2 px-3 w-full hover:bg-gray-200 transition duration-300 cursor-default block rounded-lg" onClick={handleClick} >
                                         {item.text}
                                     </NavLink>
                                 </li>

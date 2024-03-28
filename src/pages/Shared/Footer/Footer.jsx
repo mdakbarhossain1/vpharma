@@ -62,7 +62,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className="bg-blue-700">
+                <div className="bg-blue-700 w-full">
                     <div className="max-w-screen-xl mx-auto py-4 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
                         <p className="text-white text-sm text-center sm:text-left">© 2024 Developed by —
                             <a href="https://github.com/mdakbarhossain1" rel="noopener noreferrer" className="text-white ml-1" target="_blank">MD AKBAR HOSSAIN</a>
