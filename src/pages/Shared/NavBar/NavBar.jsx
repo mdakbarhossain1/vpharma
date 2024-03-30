@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Fade } from "react-awesome-reveal";
 import useOrder from "../../../hook/useOrder";
 import { BsCart2 } from "react-icons/bs";
+import useAuth from "../../../hook/useAuth";
 
 const NavBar = () => {
 
@@ -14,6 +15,8 @@ const NavBar = () => {
     const navigate = useNavigate();
     const { orders } = useOrder();
 
+    const { user, logOut } = useAuth();
+    console.log(user)
     const menu = [
         { id: 1, text: 'Home', to: '/' },
         { id: 2, text: 'Products', to: '/products' },
@@ -31,6 +34,10 @@ const NavBar = () => {
         } else {
             setChangeHeader(false)
         }
+    }
+
+    const handleLogout = ()=>{
+        logOut();
     }
 
     //change header by scrolling
@@ -61,6 +68,13 @@ const NavBar = () => {
                         <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700 " />
                     </div>
                     {/* <AuthorizeUser /> */}
+                    {user?.email ? (<img src="https://cdn-icons-png.flaticon.com/512/236/236832.png" alt={user?.email} className="w-10 h-10 rounded-full" />) : (
+                        <img src="https://cdn-icons-png.flaticon.com/512/236/236832.png" alt="..." className="w-10 h-10 rounded-full" />
+                    )}
+
+                    {
+                        user?.displayName && <button type="button" onClick={handleLogout}>Logout</button>
+                    }
                 </div>
 
                 {/* menu icon  */}

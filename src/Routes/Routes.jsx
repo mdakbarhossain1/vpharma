@@ -8,6 +8,7 @@ import Contact from "../pages/Contact/Contact"
 import ServicesDetails from "../pages/ServicesDetails/ServicesDetails"
 import ProductDetails from "../pages/ProductDetails/ProductDetails"
 import Orders from "../pages/Orders/Orders"
+import PrivateRoute from "./PrivateRoute"
 
 const Routes = createBrowserRouter([
     {
@@ -24,11 +25,11 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/products/:title',
-                element: <ProductDetails />
+                element: <PrivateRoute> <ProductDetails /> </PrivateRoute>
             },
             {
                 path: '/services/:title',
-                element: <ServicesDetails />
+                element: <PrivateRoute> <ServicesDetails /> </PrivateRoute>
             },
             {
                 path: '/orders',
