@@ -1,11 +1,12 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDXDNgbnFK64Ms7oGSgTXG5Ox_hhgDZIMA",
-    authDomain: "tele--doc.firebaseapp.com",
-    projectId: "tele--doc",
-    storageBucket: "tele--doc.appspot.com",
-    messagingSenderId: "360533330598",
-    appId: "1:360533330598:web:0f0bfea0eb936134b0c267"
-  };
+  apiKey: "AIzaSyCbZF0LzYMkYMlTf463RyfOt9uec2D1cXo",
+  authDomain: "vpharma21.firebaseapp.com",
+  projectId: "vpharma21",
+  storageBucket: "vpharma21.appspot.com",
+  messagingSenderId: "434015105913",
+  appId: "1:434015105913:web:cd800cd04b6047ac7cf5a8",
+  measurementId: "G-5VDPMX77E4"
+};
 
   export default firebaseConfig;
